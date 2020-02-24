@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/25724eda3a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="login.css">
+    <title>login</title>
+</head>
+<body>
+    
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+          <!-- Tabs Titles -->
+      
+       
+          <div style="padding: 30px;" class="fadeIn first">
+            User Login
+          </div>
+      
+          <!-- Login Form -->
+          <form>
+            <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
+            <input type="text" onkeyup="Level()" id="password" class="fadeIn third" name="login" placeholder="password">
+            <p id="lvl"></p>
+            <p><i onclick="Eye()" class="fas fa-eye" id="eye"></i> <i id="eye-slash" onclick="EyeSlash()" class="fas fa-eye-slash"></i></p>
+            <input type="submit" class="fadeIn fourth" value="Log In">
+        </form>
+      
+          <!-- Remind Passowrd -->
+          <div id="formFooter">
+            <a class="underlineHover" href="#">Forgot Password?</a>
+          </div>
+      
+        </div>
+      </div>
+
+
+
+      <div class="input-group mb-3 div-sec">
+        <div class="input-group-prepend">
+          <span class="input-group-text input-sec" id="inputGroup-sizing-default">Seconds</span>
+        </div>
+        <input id="sec-inp" onkeyup="Sec()" onchange="Sec()" type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"> 
+        <!-- <button onclick="Sec()">Ok</button> -->
+      </div>
+      <div style="width: 100%; text-align: center; margin-bottom: 50px;">
+        <span id="day-span">0</span>-day.<span id="hour-span">0</span>-hour.<span id="minute-span">0</span>-minute.<span id="second-span">0</span>-second
+      </div>
+
+      <script src="login.js"></script>
+</body>
+</html>
