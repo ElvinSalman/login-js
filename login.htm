@@ -42,13 +42,17 @@
         <div class="input-group-prepend">
           <span class="input-group-text input-sec" id="inputGroup-sizing-default">Seconds</span>
         </div>
-        <input id="sec-inp" onkeyup="Sec()" onchange="Sec()" type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"> 
-        <!-- <button onclick="Sec()">Ok</button> -->
+        <input id="sec-inp" type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"> 
+        <button class="btn btn-primary" onclick="Sec()">Transfer</button>
       </div>
       <div style="width: 100%; text-align: center; margin-bottom: 50px;">
         <span id="day-span">0</span>-day.<span id="hour-span">0</span>-hour.<span id="minute-span">0</span>-minute.<span id="second-span">0</span>-second
       </div>
-
+      <div style="display: flex;justify-content: space-around;width: 100%;">
+      <button class="btn btn-primary" id="start" onclick="Start()">Start</button>
+      <button class="btn btn-primary" id="stop" onclick="Pause()">Pause</button>
+      </button>
+      
       <script src="login.js"></script>
 </body>
 </html>

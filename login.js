@@ -69,7 +69,11 @@ let s_span=document.getElementById('second-span');
 
 
 function Sec() {
+
 let secValue=sec.value;
+if(sec.value!=0){
+sec.value--;
+}
 
 
 //day
@@ -112,6 +116,24 @@ if(Math.floor(minute_ot)=="0"){
     s_span.innerHTML=Math.floor(minute_ot);
 }
 
-// setInterval(parseInt(sec--),1000);
+
+
 
 }
+
+
+
+
+let intervalID;
+
+function Start() { 
+    // sec.value="";
+    intervalID=setInterval(Sec,1000);
+}
+
+function Pause() {
+    clearInterval(intervalID);
+}
+
+
+
