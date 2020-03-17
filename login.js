@@ -128,6 +128,10 @@ let intervalID;
 
 function Start() { 
     // sec.value="";
+    if( s_span.innerHTML != '0' ) {
+        document.getElementsByClassName('div-sec')[0].style.display = 'none';
+    }
+    
     intervalID=setInterval(Sec,1000);
 }
 
